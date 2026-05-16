@@ -11,207 +11,182 @@
 </head>
 <body>
 
-  <header class="header header--scrolled" id="header">
-    <div class="container header__inner">
-      <a href="index.html#inicio" class="logo">
-        <span class="logo__monogram">SB</span>
-        <div class="logo__text">
-          <span class="logo__name">Solana Becerra</span>
-          <span class="logo__title">Abogada</span>
-        </div>
+<header class="header" id="header">
+  <div class="container header__inner">
+
+    <a href="index.html#inicio" class="logo">
+      <img src="assets/img/logo-solana-becerra.png" alt="Solana Becerra Abogada" class="logo__img" />
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="index.html#inicio" class="nav__link">Inicio</a>
+      <a href="index.html#sobre-mi" class="nav__link">Sobre mí</a>
+      <a href="index.html#servicios" class="nav__link">Servicios</a>
+      <a href="index.html#contacto" class="nav__link">Contacto</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="https://instagram.com/abogadabecerra" target="_blank" class="header__ig" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
       </a>
-
-      <nav class="nav" id="nav">
-        <a href="index.html#inicio" class="nav__link">Inicio</a>
-        <a href="index.html#sobre-mi" class="nav__link">Sobre mí</a>
-        <a href="index.html#servicios" class="nav__link">Servicios</a>
-        <a href="index.html#contacto" class="nav__link">Contacto</a>
-      </nav>
-
-      <div class="header__actions">
-        <a href="https://instagram.com/abogadabecerra" target="_blank" class="header__ig" aria-label="Instagram">Instagram</a>
-        <a href="index.html#contacto" class="btn btn--primary">Consultar</a>
-      </div>
-
-      <button class="hamburger" id="hamburger" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="index.html#contacto" class="btn btn--primary">Consultar</a>
     </div>
-  </header>
 
-  <main class="services-page">
-    <section class="services-hero">
-      <div class="container">
-        <span class="section-label">Áreas de práctica</span>
-        <h1 class="section-title">Servicios Profesionales</h1>
-        <p class="section-sub">
-          Asesoramiento jurídico integral, claro y personalizado en distintas ramas del derecho.
-        </p>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</header>
+
+
+<main class="services-page">
+  <section class="services-hero">
+    <div class="container">
+      <span class="section-label">Áreas de práctica</span>
+      <h1 class="section-title">Servicios Profesionales</h1>
+      <p class="section-sub">Asesoramiento jurídico integral, claro y personalizado.</p>
+
+      <div class="services-index">
+        <a href="#familia">Familia</a>
+        <a href="#sucesorio">Sucesorio</a>
+        <a href="#comercial">Comercial</a>
+        <a href="#laboral">Laboral</a>
+        <a href="#inmobiliario">Inmobiliario</a>
+        <a href="#agrario">Agrario</a>
+        <a href="#internacional">Internacional</a>
+        <a href="#previsional">Previsional</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="services-detail">
-      <div class="container services-detail__grid">
+<section class="services-detail">
+  <div class="container services-detail__grid">
 
-        <article class="service-detail-card" id="familia">
-          <span class="service-detail-card__number">01</span>
-          <h2>Derecho de Familia</h2>
-          <p>
-            Asesoramiento y representación en procesos de divorcio, régimen de comunicación,
-            cuidado personal y cuota alimentaria. Intervención en acciones de filiación y
-            conflictos familiares, priorizando soluciones jurídicas claras y acompañamiento
-            cercano en situaciones de especial sensibilidad.
-          </p>
-        </article>
+    <article class="service-detail-card" id="familia">
+      <div class="service-detail-card__aside">
+        <span class="service-detail-card__number">01</span>
+        <span class="service-detail-card__icon"><i data-lucide="users-round"></i></span>
+      </div>
+      <div class="service-detail-card__content">
+        <h2>Derecho de Familia</h2>
+        <p>Asesoramiento y representación en procesos de divorcio, régimen de comunicación, cuidado personal y cuota alimentaria. Intervención en acciones de filiación y conflictos familiares, priorizando soluciones jurídicas claras y acompañamiento cercano en situaciones de especial sensibilidad.</p>
+      </div>
+    </article>
 
-        <article class="service-detail-card" id="sucesorio">
-          <span class="service-detail-card__number">02</span>
-          <h2>Derecho Sucesorio</h2>
-          <p>
-            Gestión integral de sucesiones, declaratorias de herederos y transmisión de bienes
-            propios y gananciales. Realización de operaciones de tracto abreviado y administración
-            de indivisiones hereditarias.
-          </p>
-          <p>
-            Asimismo, brindo asesoramiento en planificación patrimonial, anticipo de herencia y
-            organización jurídica de bienes familiares.
-          </p>
-        </article>
+    <article class="service-detail-card" id="sucesorio">
+      <div class="service-detail-card__aside">
+        <span class="service-detail-card__number">02</span>
+        <span class="service-detail-card__icon"><i data-lucide="file-text"></i></span>
+      </div>
+      <div class="service-detail-card__content">
+        <h2>Derecho Sucesorio</h2>
+        <p>Gestión integral de sucesiones, declaratorias de herederos y transmisión de bienes propios y gananciales. Realización de operaciones de tracto abreviado y administración de indivisiones hereditarias. Asimismo, brindo asesoramiento en planificación patrimonial, anticipo de herencia y organización jurídica de bienes familiares.</p>
+      </div>
+    </article>
 
-        <article class="service-detail-card" id="comercial">
-          <span class="service-detail-card__number">03</span>
-          <h2>Derecho Comercial y Empresarial</h2>
-          <p>
-            Asesoramiento jurídico integral a emprendedores, comerciantes, profesionales y personas
-            jurídicas. Constitución y acompañamiento legal de sociedades, asociaciones civiles y
-            cooperativas de trabajo.
-          </p>
-          <p>
-            Incluye seguimiento mensual de cuestiones legales y administrativas ante organismos de
-            control y el Registro de Personas Jurídicas, Empresas y Contratos.
-          </p>
-          <p>
-            Redacción, revisión y negociación de contratos civiles y comerciales. Intervención en
-            procesos concursales y quiebras, acompañando a empresas y particulares en situaciones
-            de crisis económica y reorganización patrimonial.
-          </p>
-          <p>
-            También brindo asesoramiento en propiedad intelectual, incluyendo registro de marcas y
-            patentes, protección de activos intangibles y resguardo jurídico de proyectos y
-            emprendimientos.
-          </p>
-        </article>
+    <article class="service-detail-card" id="comercial">
+      <div class="service-detail-card__aside">
+        <span class="service-detail-card__number">03</span>
+        <span class="service-detail-card__icon"><i data-lucide="briefcase-business"></i></span>
+      </div>
+      <div class="service-detail-card__content">
+        <h2>Derecho Comercial y Empresarial</h2>
+        <p>Asesoramiento jurídico integral a emprendedores, comerciantes, profesionales y personas jurídicas. Constitución y acompañamiento legal de sociedades, asociaciones civiles y cooperativas de trabajo, incluyendo el seguimiento mensual de cuestiones legales y administrativas ante organismos de control y el Registro de Personas Jurídicas, Empresas y Contratos.</p>
+        <p>Redacción, revisión y negociación de contratos civiles y comerciales. Intervención en procesos concursales y quiebras, acompañando a empresas y particulares en situaciones de crisis económica y reorganización patrimonial.</p>
+        <p>Asimismo, me dedico al asesoramiento en propiedad intelectual, incluyendo registro de marcas y patentes, protección de activos intangibles y resguardo jurídico de proyectos y emprendimientos.</p>
+      </div>
+    </article>
 
-        <article class="service-detail-card" id="laboral">
-          <span class="service-detail-card__number">04</span>
-          <h2>Derecho Laboral</h2>
-          <p>
-            Asistencia tanto a trabajadores como a empleadores en conflictos laborales, despidos,
-            registración laboral, reclamos salariales, indemnizaciones y acuerdos extrajudiciales.
-          </p>
-          <p>
-            También intervengo en casos vinculados a accidentes de trabajo, enfermedades
-            profesionales y reclamos ante ART, brindando acompañamiento integral durante todo el
-            proceso administrativo y judicial.
-          </p>
-        </article>
+    <article class="service-detail-card" id="laboral">
+      <div class="service-detail-card__aside">
+        <span class="service-detail-card__number">04</span>
+        <span class="service-detail-card__icon"><i data-lucide="handshake"></i></span>
+      </div>
+      <div class="service-detail-card__content">
+        <h2>Derecho Laboral</h2>
+        <p>Asistencia tanto a trabajadores como a empleadores en conflictos laborales, despidos, registración laboral, reclamos salariales, indemnizaciones y acuerdos extrajudiciales.</p>
+        <p>También intervengo en casos vinculados a accidentes de trabajo, enfermedades profesionales y reclamos ante ART, brindando acompañamiento integral durante todo el proceso administrativo y judicial.</p>
+      </div>
+    </article>
 
-        <article class="service-detail-card" id="inmobiliario">
-          <span class="service-detail-card__number">05</span>
-          <h2>Derecho a la Propiedad, Registral e Inmobiliario</h2>
-          <p>
-            Asesoramiento en contratos inmobiliarios, transmisión y protección jurídica de bienes.
-            Gestión de trámites registrales y cuestiones vinculadas al derecho de propiedad.
-          </p>
-          <p>
-            Asimismo, realizo afectaciones al régimen de protección de la vivienda, brindando
-            herramientas jurídicas orientadas al resguardo patrimonial familiar.
-          </p>
-        </article>
+    <article class="service-detail-card" id="inmobiliario">
+      <div class="service-detail-card__aside">
+        <span class="service-detail-card__number">05</span>
+        <span class="service-detail-card__icon"><i data-lucide="house"></i></span>
+      </div>
+      <div class="service-detail-card__content">
+        <h2>Derecho a la Propiedad, Registral e Inmobiliario</h2>
+        <p>Asesoramiento en contratos inmobiliarios, transmisión y protección jurídica de bienes. Gestión de trámites registrales y cuestiones vinculadas al derecho de propiedad.</p>
+        <p>Asimismo, realizo afectaciones al régimen de protección de la vivienda, brindando herramientas jurídicas orientadas al resguardo patrimonial familiar.</p>
+      </div>
+    </article>
 
-        <article class="service-detail-card" id="agrario">
-          <span class="service-detail-card__number">06</span>
-          <h2>Derecho Agrario</h2>
-          <p>
-            Asesoramiento especializado en relaciones jurídicas vinculadas a la actividad
-            agropecuaria. Contratos agrarios, arrendamientos rurales, explotación agropecuaria y
-            organización jurídica de emprendimientos rurales.
-          </p>
-          <p>
-            Gestión y tramitación de marcas y señales ganaderas, así como cuestiones vinculadas a
-            la actividad productiva y patrimonial del sector agrario.
-          </p>
-        </article>
+    <article class="service-detail-card" id="agrario">
+      <div class="service-detail-card__aside">
+        <span class="service-detail-card__number">06</span>
+        <span class="service-detail-card__icon"><i data-lucide="sprout"></i></span>
+      </div>
+      <div class="service-detail-card__content">
+        <h2>Derecho Agrario</h2>
+        <p>Asesoramiento especializado en relaciones jurídicas vinculadas a la actividad agropecuaria. Contratos agrarios, arrendamientos rurales, explotación agropecuaria y organización jurídica de emprendimientos rurales.</p>
+        <p>Gestión y tramitación de marcas y señales ganaderas, así como cuestiones vinculadas a la actividad productiva y patrimonial del sector agrario.</p>
+      </div>
+    </article>
 
-        <article class="service-detail-card" id="internacional">
-          <span class="service-detail-card__number">07</span>
-          <h2>Derecho Internacional Público y Privado</h2>
-          <p>
-            Asesoramiento en cuestiones vinculadas al Derecho Internacional Público y Privado,
-            abordando relaciones jurídicas con elementos extranjeros y conflictos privados de
-            carácter internacional.
-          </p>
-          <p>
-            Brindo asistencia en materia de derecho migratorio, incluyendo tramitación de visas,
-            residencias, ciudadanía y nacionalidad, así como asesoramiento integral para personas
-            que desarrollan actividades, vínculos familiares o patrimoniales en distintos países.
-          </p>
-          <p>
-            Asimismo, intervengo en contratos internacionales, jurisdicción y ley aplicable,
-            reconocimiento de documentación extranjera y demás cuestiones derivadas de relaciones
-            civiles, comerciales y familiares de carácter internacional.
-          </p>
-        </article>
+    <article class="service-detail-card" id="internacional">
+      <div class="service-detail-card__aside">
+        <span class="service-detail-card__number">07</span>
+        <span class="service-detail-card__icon"><i data-lucide="globe-2"></i></span>
+      </div>
+      <div class="service-detail-card__content">
+        <h2>Derecho Internacional Público y Privado</h2>
+        <p>Asesoramiento en cuestiones vinculadas al Derecho Internacional Público y Privado, abordando relaciones jurídicas con elementos extranjeros y conflictos privados de carácter internacional.</p>
+        <p>Brindo asistencia en materia de derecho migratorio, incluyendo tramitación de visas, residencias, ciudadanía y nacionalidad, así como asesoramiento integral para personas que desarrollan actividades, vínculos familiares o patrimoniales en distintos países.</p>
+        <p>Asimismo, intervengo en contratos internacionales, jurisdicción y ley aplicable, reconocimiento de documentación extranjera y demás cuestiones derivadas de relaciones civiles, comerciales y familiares de carácter internacional.</p>
+      </div>
+    </article>
 
-        <article class="service-detail-card" id="previsional">
+
+      <article class="service-detail-card" id="previsional">
+        <div class="service-detail-card__aside">
           <span class="service-detail-card__number">08</span>
+          <span class="service-detail-card__icon"><i data-lucide="shield-check"></i></span>
+        </div>
+        <div class="service-detail-card__content">
           <h2>Derecho Previsional</h2>
-          <p>
-            Asesoramiento integral en materia previsional, acompañando a personas trabajadoras,
-            jubiladas y pensionadas en la gestión y reconocimiento de sus derechos ante organismos
-            previsionales.
-          </p>
-          <p>
-            Brindo asistencia en jubilaciones, pensiones, reajuste de haberes, reconocimiento de
-            servicios, moratorias, pensiones derivadas y trámites vinculados a regímenes especiales.
-          </p>
-          <p>
-            Asimismo, realizo seguimiento y representación en reclamos administrativos y judiciales
-            relacionados con prestaciones previsionales y de seguridad social.
-          </p>
-        </article>
+          <p>Asesoramiento integral en materia previsional, acompañando a personas trabajadoras, jubiladas y pensionadas en la gestión y reconocimiento de sus derechos ante organismos previsionales.</p>
+          <p>Brindo asistencia en jubilaciones, pensiones, reajuste de haberes, reconocimiento de servicios, moratorias, pensiones derivadas y trámites vinculados a regímenes especiales. Asimismo, realizo seguimiento y representación en reclamos administrativos y judiciales relacionados con prestaciones previsionales y de seguridad social.</p>
+        </div>
+      </article>
 
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="services-final-cta">
-      <div class="container">
-        <h2>¿Necesitás asesoramiento?</h2>
-        <p>Podés escribirme para evaluar tu consulta y definir los próximos pasos.</p>
-        <a href="index.html#contacto" class="btn btn--primary">Consultar ahora &rarr;</a>
-      </div>
-    </section>
+</main>
+<section class="services-final-cta">
+  <div class="container services-final-cta__inner">
+    <span class="section-label section-label--light">Consulta profesional</span>
+    <h2>¿Necesitás asesoramiento?</h2>
+    <p>Podés escribirme para evaluar tu consulta y definir los próximos pasos.</p>
+    <a href="index.html#contacto" class="btn btn--primary">Consultar ahora &rarr;</a>
+  </div>
+</section>
   </main>
 
-  <a href="https://wa.me/543491410975" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
-    WhatsApp
-  </a>
+<!-- ========== WHATSAPP FLOAT ========== -->
+<a href="https://wa.me/543491410975" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16.04 3C9.42 3 4.03 8.39 4.03 15.01c0 2.65.86 5.1 2.33 7.09L4 29l7.12-2.29a11.93 11.93 0 0 0 4.92 1.03c6.62 0 12.01-5.39 12.01-12.01S22.66 3 16.04 3Zm0 22.55c-1.55 0-3.05-.34-4.46-1.02l-.32-.15-4.22 1.36 1.38-4.05-.21-.33a10.47 10.47 0 0 1-1.99-6.35c0-5.42 4.4-9.82 9.82-9.82s9.82 4.4 9.82 9.82-4.4 10.54-9.82 10.54Zm5.38-7.36c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.66.15-.19.29-.76.95-.93 1.14-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.49.1-.19.05-.36-.02-.51-.07-.15-.66-1.6-.9-2.19-.24-.58-.48-.5-.66-.51h-.56c-.19 0-.51.07-.78.36-.27.29-1.02 1-1.02 2.43s1.05 2.82 1.19 3.01c.15.19 2.06 3.14 4.99 4.41.7.3 1.25.48 1.67.62.7.22 1.34.19 1.84.12.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.34Z"/>
+  </svg>
+</a>
 
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const nav = document.getElementById('nav');
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="assets/js/main.js?v=30"></script>
 
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      nav.classList.toggle('nav--open');
-    });
-
-    nav.querySelectorAll('.nav__link').forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        nav.classList.remove('nav--open');
-      });
-    });
-  </script>
 </body>
 </html>
