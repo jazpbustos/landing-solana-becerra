@@ -594,11 +594,11 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 .service-card {
-  min-height: 215px;
   background: rgba(255,255,255,0.28);
   border: 1px solid rgba(44,79,64,0.14);
   border-radius: 10px;
-  padding: 26px 18px 22px;
+  min-height: 300px;
+  padding: 20px 20px 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -619,7 +619,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .service-card__icon {
   width: 70px;
   height: 70px;
-  margin: 0 auto 14px;
+  margin-bottom: 16px;
   color: var(--color-primary);
   display: flex;
   align-items: center;
@@ -637,20 +637,20 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   font-weight: 700;
   color: var(--color-primary);
   line-height: 1.18;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .service-card__desc {
   font-size: 0.72rem;
   color: var(--color-text-sec);
   line-height: 1.35;
-  margin: 0 auto 12px;
+  margin-bottom: 16px;
   max-width: 170px;
 }
 
 .service-card__link {
   color: var(--color-beige-dark);
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
@@ -759,92 +759,122 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
    CONTACT
    ============================================================ */
 .contact {
+  position: relative;
   padding: 120px 0;
-  background: var(--color-white);
+  background:
+    radial-gradient(circle at top right, rgba(227,202,171,0.24), transparent 34%),
+    linear-gradient(135deg, #ffffff 0%, #f8f5ee 100%);
 }
- 
+
 .contact__inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.72fr);
+  gap: 86px;
   align-items: start;
+  max-width: 1040px;
+  margin: 0 auto;
 }
- 
+
 .contact__maps {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 30px;
 }
- 
+
+.contact__map-item {
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
 .contact__map-label {
-  font-size: 0.82rem;
+  font-size: 0.98rem;
   color: var(--color-text-sec);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  line-height: 1.4;
 }
- 
+
 .contact__map-label strong {
-  color: var(--color-text);
-  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 1.08rem;
+  font-weight: 700;
 }
- 
+
 .map-frame {
-  border-radius: var(--radius-md);
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--color-border);
+  box-shadow: 0 8px 22px rgba(44,79,64,0.07);
+  border: 1px solid rgba(44,79,64,0.08);
 }
- 
-.map-frame iframe { display: block; }
- 
+
+.map-frame iframe {
+  display: block;
+  height: 215px;
+}
+
+.contact__info {
+  justify-self: end;
+  width: 100%;
+  max-width: 360px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 10px 0 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
 .contact__info-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--color-text);
-  margin-bottom: 28px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--color-border);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 26px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(44,79,64,0.14);
 }
- 
+
 .contact__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
   margin-bottom: 36px;
 }
- 
+
 .contact__item {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 22px;
 }
- 
+
+
 .contact__icon {
-  width: 40px; height: 40px;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
   background: rgba(44,79,64,0.08);
-  border-radius: var(--radius-sm);
-  display: flex;
+  border: 1px solid rgba(44,79,64,0.1);
+  border-radius: 50%;
+  color: var(--color-primary);
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary);
-  flex-shrink: 0;
+  line-height: 0;
 }
- 
-.contact__link {
-  font-size: 0.9rem;
-  color: var(--color-text);
-  font-weight: 400;
-  transition: color var(--transition);
+
+.contact__icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  stroke-width: 1.8;
 }
- 
-.contact__link:hover { color: var(--color-primary); }
- 
-.contact__text {
-  font-size: 0.9rem;
-  color: var(--color-text-sec);
+
+
+.contact__cta {
+  margin-top: 16px;
 }
- 
-.contact__cta { margin-top: 8px; }
- 
+
 /* ============================================================
    INSTAGRAM
    ============================================================ */
