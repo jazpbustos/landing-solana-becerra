@@ -1208,6 +1208,16 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .about__content { padding-left: 0; }
  
   .about__stats { gap: 24px; }
+
+  
+.about__stats {
+  justify-content: center;
+  text-align: center;
+}
+
+.about__stat {
+  align-items: center;
+}
  
   /* Services */
   .services-carousel {
@@ -1229,6 +1239,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     grid-template-columns: 1fr;
   }
  
+  .service-card{
+    padding: 0%;
+  }
   /* Contact */
   .contact { padding: 80px 0; }
  
@@ -1236,7 +1249,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     grid-template-columns: 1fr;
     gap: 48px;
   }
- 
+ .contact__cta {
+  display: flex;
+  width: fit-content;
+  margin: 24px auto 0;
+}
+
   /* Instagram */
   .instagram { padding: 80px 0; }
  
