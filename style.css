@@ -1197,9 +1197,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     grid-template-columns: 1fr;
   }
  
-  .service-card{
-    padding: 0%;
-  }
   /* Contact */
   .contact { padding: 80px 0; }
  
