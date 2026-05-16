@@ -958,84 +958,100 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
    ============================================================ */
 .footer {
   background: var(--color-text);
-  padding-top: 80px;
+  padding: 42px 0 26px;
 }
- 
-.footer__inner {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr 1.4fr 1fr;
-  gap: 48px;
-  padding-bottom: 64px;
-}
- 
-.footer__brand .logo__monogram { background: rgba(227,202,171,0.2); color: var(--color-beige); }
- 
-.footer__tagline {
-  font-size: 0.82rem;
-  color: rgba(255,255,255,0.5);
-  margin-top: 16px;
-  margin-bottom: 24px;
-  line-height: 1.6;
-  max-width: 260px;
-}
- 
-.footer__socials {
-  display: flex;
-  gap: 12px;
-}
- 
-.footer__socials a {
-  width: 36px; height: 36px;
-  border-radius: var(--radius-sm);
-  background: rgba(255,255,255,0.08);
+
+.footer__top {
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.6);
-  transition: all var(--transition);
+  justify-content: space-between;
+  gap: 48px;
+  padding-bottom: 28px;
 }
- 
-.footer__socials a:hover {
-  background: var(--color-primary);
-  color: var(--color-white);
-}
- 
-.footer__col-title {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
-  margin-bottom: 20px;
-}
- 
-.footer__links {
+
+.footer__brand {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: flex-start;
 }
- 
-.footer__links a,
-.footer__links li {
+
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer__logo-img {
+  width: 350px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.footer__values {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.56);
+  letter-spacing: 0.08em;
+}
+
+.footer__copy {
   font-size: 0.84rem;
-  color: rgba(255,255,255,0.6);
-  transition: color var(--transition);
-  line-height: 1.4;
+  color: rgba(255,255,255,0.68);
+  white-space: nowrap;
 }
- 
-.footer__links a:hover { color: var(--color-beige); }
- 
+
 .footer__bottom {
   border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 24px 0;
-}
- 
-.footer__bottom p {
-  font-size: 0.78rem;
-  color: rgba(255,255,255,0.35);
+  padding-top: 20px;
   text-align: center;
 }
- 
+
+.footer__bottom p {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.38);
+}
+
+.footer__bottom a {
+  color: var(--color-beige);
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.footer__bottom a:hover {
+  color: var(--color-white);
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 38px 0 24px;
+  }
+
+  .footer__top {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .footer__brand {
+    align-items: center;
+  }
+
+  .footer__logo-img {
+    width: 290px;
+  }
+
+  .footer__values {
+    font-size: 0.76rem;
+    letter-spacing: 0.06em;
+  }
+
+  .footer__copy {
+    white-space: normal;
+  }
+}
+
+
 /* ============================================================
    WHATSAPP FLOAT
    ============================================================ */
@@ -1267,7 +1283,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
     grid-template-columns: 1fr;
     gap: 32px;
   }
- 
+   .footer__logo-img {
+    width: 260px;
+  }
   /* WhatsApp */
   .whatsapp-float { bottom: 20px; right: 20px; }
  
