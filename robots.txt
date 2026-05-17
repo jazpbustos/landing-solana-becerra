@@ -1,0 +1,5 @@
+txt id="w2n9x6"
+User-agent: *
+Allow: /
+
+Sitemap: https://abogadabecerra.netlify.app/sitemap.xml
