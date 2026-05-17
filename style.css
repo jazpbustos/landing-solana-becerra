@@ -360,7 +360,17 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   color: var(--color-beige-dark);
   margin-bottom: 20px;
 }
- 
+
+.hero__seo-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-beige-dark);
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
 .hero__name {
   font-size: clamp(3rem, 6vw, 5.2rem);
   font-weight: 800;
@@ -369,15 +379,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   letter-spacing: -0.02em;
   margin-bottom: 16px;
 }
- 
-.hero__role {
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--color-beige-dark);
-  margin-bottom: 28px;
-}
+
  
 .hero__desc {
   font-size: 1.1rem;
